@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+<meta name="theme-color" content="#1B3438">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="트래블릿">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIu2KuOuemOu4lOumvyIsICJzaG9ydF9uYW1lIjogIu2KuOuemOu4lOumvyIsICJzdGFydF91cmwiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjRjNFQ0RCIiwgInRoZW1lX2NvbG9yIjogIiMxQjM0MzgiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FJQUFBRGR2dnRRQUFBRDUwbEVRVlI0bk8zZHZXMGtSeFNGVWE2d01oU0QvSTFBaG15Rm9TZ1VpcUxZTUJTSUVwR3h6aG9sakZZOXZjT2V1ZjFUcitvY2p3QUJOb2dQcng1UmplR0huMy81OVExZTljUFZEMEJ0QWlJaUlDSUNJaUlnSWdJaUlpQWlBaUlpSUNJQ0lpSWdJZ0lpSWlBaUFpSWlJQ0lDSWlJZ0lnSWlJaUFpQWlJaUlDSUNJaUlnSWdJaUlpQWlBaUlpSUNJQ0lpSWdJZ0lpSWlBaUFpTHk4ZW9IWUFkLy9mSFR0MS8rOXVjL3AvM29EejZocks1Rk4vZE9LTWtSVnRXNzlXejhucENBU3RwZXh0RU5DYWllWjVzNHRDRUJFUkZRTWErTmsrT0drSUNJQ0lpSWdJZ0lpSWlBaUFpb21OZHVKNDY3MHhBUUVRSFY4K3c0T2ZSS1ZVQWxiVy9pNkF0NUFWVzFwWXdUWHVmd1B0QUl2RkJHVmQwZFlaOC9mYm42RVhoQ2R3Rzl2YjE5L3ZSRlJsWDArMUw5cmFIZi8vN3gyaWZoZ1I0bjBJS0IxTE1DQVRVeTZsT1pnQm9aOWFiZkhlZ0I2MUUvaWsyZ0JRUHBjclVEYW1SMG9SRUNhbVIwaVpJNzBBUFdvNU9OTTRFV0RLUnpEQnRRSTZPampYYUVyWEt1SFdmd0NiUmdJTzF1cm9BYUdlMW94b0FhR2UxaWloM29BZXRSYU40SnRHQWd2VVpBL3lPalp3bG9oWXkybTMwSGVzQjZ0SVVKOUQ0RDZRRUJiU1dqVlk2dzV6alhGa3lnRnhsSWpZQWlNaExRRG1iT3lBNjBtem5YSXhOb2YxTU5KQUVkWlpLTUJIU3M0VE95QTUxaDRQWElCRHJWZUFOSlFCY1lLYU1hbjVFNHpLOTdWZWx6clVaQXF3YXJxbWhHaFFQNm50SmhsY3Rvd0lCVzFhcXFVRWF6QkxTcS82cjZMMm5xZ0ZaMVdGWFBHUWxva3g2cTZqTWpBVVhPRDZ1M2pBUzB2M09xNnFRa0FaM2tvS291ejhobDZzNU9POVF1VDZjUjBJdXVXcXM3NmVaR1FPL280ZSt2cHJkMEdnSDlxNTlRN3ZXWlRqTmRRRDJIc3RCek56ZkRCbFFvbEhzbDBtbktCMVE2bEh1RjBtbktCRFJZS0F2bHVybnBMcUN4UTdsWE41Mm11NERtVVQyZFJrQm5HNk9iR3dHZFo3QjBHZ0dkWWNoMEdnRWRhT0J1YmdSMGlCblNhUVMwczNuU2FRUzBqOW02dVJGUWF0cDBHZ0c5YnZKMEdnRTlUVGZmRXRBVHBITlBRSnRJNTNzRTlBN3BQQ2FnZGJyWlNFQkwwbm1LZ1A0am5SY0lTRGVScVFPU1RtN1NnS1N6bDdrQzBzM3VaZ2xJT2djWlB5RHBIR3JZZ0hSempnRURrczZaaGdwSU91Y2JJU0RkWEtoMlFOSzVYTldBcE5PSllnSHBwamRsQXBKT253b0VKSjJlOVJ1UWJrcm9NU0RwRk5MZGYyMVdUeTNkQlVRdEFpSWlJQ0lDSWlJZ0lnSWlJaUFpQWlJaUlDSUNJaUlnSWdJaUlpQWlBaUlpSUNJQ0lpSWdJZ0lpSWlBaUFpSWlJQ0lDSWlJZ0lnSWlJaUFpQWlJaUlDSUNJaUlnSWdJaUlpQWlBaUlpSUNJQ0lpSWdJZ0lpSWlBaUFpSWlJQ0lDSWlJZ0lnSWlJaUFpQWlJaUlDSUNJaUlnSWdJaUlpQWlBaUlpSUNKZkFYWUdBNzdqa0FHMEFBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQUlBQUFCN0drT3RBQUFMbVVsRVFWUjRuTzNac1pFY1ZSU0Y0UllsREdLUVR3UXlaQk1HVVJBS1VSQ0dBaUVSREJ3TXFhUkZPN016MDlQOTNyM3ZmSjlMbGFvZHpyLzN6YnNQSHo5dEFPVDVhZllIQURDSEFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaDNzLytBSUNkUHYveHk3WC85TnVmLzR6OGtxYmVmZmo0YWZZM0FOenJqZEcvUmd5dUVRQ2doeDNULzVJTXZDWUFRSFZQVHY5TE12Q1NINEdCMGc1Yy84UC90ZTRFQUtqcmpMM1dnRzg4QVFFVkRaaHB6MEV1QUtDY01YK2tPd1VFQUNDVUFBQzFqUHpEUFB3SUVBQ2drUEdMbk53QUFRQ3FtTFhGc1EwUUFJQlFBZ0NVTVBmUDhNd2pRQUFBUWdrQU1GK0ZQOEFyZk1OZ0FnQVFTZ0FBUWdrQVFDZ0JBQ2FyOC9oZTUwdkdFQUNBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUdDeTMvNzhaL1luZkZYblM4WVFBSUJRQWdBUVNnQUFRZ2tBTUYrRngvY0szekNZQUFDRUVnQ2doTGwvZ0FmKytiOEpBRUFzQVFDcW1QVm5lT2FmLzVzQUFLV00zK0xZOWQ4RUFLaG01Q0luci84bUFBQ3hCQUFvWjh3ZjV1Ri8vbS9iOXU3RHgwK3p2d0hnc3M5Ly9ITEdQMnY2djNBQkFIV2RzZFRXL3hzQkFFbzdkcSt0LzB1ZWdJQWVubndPTXYydkNRRFF5WTRNbVA1ckJBRG82bzBZR1AxN0NBQkFLRDhDQTRRU0FJQlFBZ0FRU2dBbSsrdlhmMmQvQWhCS0FPYjc2OWQvWlFBWTcvM3NEK0NyYnczNC9lK2Y1MzRKRU1JRlVJNkRBQmhEQUlxU0FlQnNub0JLOHk0RW5NY0YwSU9EQURpY0FIUWlBOENCQktBZkdRQU80VGVBcnZ3OEFEekpCZENlZ3dEWVJ3QVdJUVBBb3p3QkxjVzdFSEEvRjhDYUhBVEFUUUt3TWhrQTN1QUphSDNlaFlDTFhBQkJIQVRBU3dJUVJ3YUFMendCaGZJdUJMZ0EwamtJSUpZQXNHMHlBSkU4QWZHZGR5R0k0Z0xnQWdjQkpCQUFycElCV0pzQWNJTU13S3I4QnNCZC9Ed0E2M0VCOEJnSEFTeERBTmhEQm1BQm5vRFl6N3NRdE9ZQzRBQU9BdWhJQURpTURFQXZub0E0bUhjaDZNSUZ3RmtjQkZDY0FIQXVHWUN5UEFFeGduY2hLTWdGd0ZBT0FxaERBSmhBQnFBQ0FXQWFHWUM1L0FiQVpINGVnRmxjQUZUaElJREJCSUJhWkFDRzhRUkVSZDZGWUFBWEFLVTVDT0E4QWtBRE1nQm44QVJFRzk2RjRGZ3VBUHB4RU1BaEJJQ3VaQUNlNUFtSTNyd0x3VzR1QUJiaElJQkhDUUJMa1FHNG55Y2dGdVJkQ083aEFtQmxEZ0o0Z3dDd1BobUFpd1NBRkRJQVAvQWJBRm44UEFEZnVBQUk1U0FBQVNDYURKRE1FeEI0RnlLVUN3QytjeEFRUlFEZ1J6SkFDRTlBY0psM0laYm5Bb0FiSEFTc1NnRGdMakxBZWp3QndRTzhDN0VTRndEczRTQmdBUUlBKzhrQXJRa0FQRXNHYU1wdkFIQU1Qdy9RamdzQUR1WWdvQXNCZ0ZQSUFQVjVBb0lUZVJlaU1oY0FqT0Fnb0NBQmdIRmtnRkk4QWNGbzNvVW93Z1VBMHpnSW1Fc0FZRElaWUJaUFFGQ0NkeUhHY3dGQUxRNENoaEVBcUVnR0dNQVRFTlRsWFloVHVRQ2dBUWNCWnhBQWFFTUdPSllBUURNeXdGSDhCZ0F0K1htQTU3a0FvRGNIQWJzSkFLeEFCdGpCRXhDc3c3c1FEM0VCd0lJY0JOeERBR0JaTXNEYlBBSEI0cndMY1kwTEFGSTRDUGpCdXc4ZlA4MytCbjdrLzFMTzVocGdFNEJlaElIREtVRXlBV2hQRlhpZURHUVNnR1VKQTQrU2dUUUNrRVVWdUVrR2NnZ0Fxc0JsU3JBOEFlQXFZV0NUZ2FVSkFJOVJoVXd5c0NRQjRBQ3FrRU1KVmlJQW5FZ1lWaVVEYXhBQVJsT0ZaY2hBZHdKQUZjTFFseEkwSlFDVXBncU55RUE3QWtBL3FsQ1pERFFpQUt4REdFcFJndm9FZ01XcHdsd3lVSmtBRUVvWVJwS0JtZ1FBdmxPRnN5bEJLUUlBTjZqQzRXU2dDQUdBbllUaFNUSXduUURBa1ZUaFVUSXdrUURBNlZUaEhrb3duZ0RBTk1Md21neU1KQUJRaXlwc01qQ0tBRUFQbVdGUWdsTUpBRFFXVWdVWk9NbjcyUjhBM0JZeTlLK1ovbE1KQU5RU3UvVXYyZjB4QkFEbU1QUVhtZjZSQkFET1planZaUHJIRXdBNGpLM2Z3ZTVQSkFEd01FTi9DTk0vblFEQVZZYitKS2EvQ0FHQWJiUDFROWo5YWdTQUxJWitDdE5ma3dDd0prTmZoT212VEFCb3o5WVhaUGRiRUFEYU1QUXRtUDVHQklCeURIMVRwcjhkQVdBYVE3OEd1OStYQURDQ3JWK1M2ZTlPQURpU29ROWgrdGNnQU94aDZEUFovY1VJQURmWWVqYlR2eWdCNEN0RHowV21mMkVDRU1mUWN3KzduMEFBVm1icjJjSDA1eENBRlJoNkRtSDYwd2hBSjRhZU05ajlXQUpRbEsxbkFOTWZUZ0FtTS9STVlmclpCQUNpMkgxZUVnQ0lZUHA1VFFCZ2NhYWZhd1FBMW1UM3VVa0FZRFdtbnpzSkFLekQ5UE1RQVlEMjdENzdDQUEwWnZwNWhnQkFTNmFmNXdrQWRHTDNPWkFBUUErbW44TUpBRlJuK2ptSkFFQlJkcCt6Q1FDVVkvb1pRd0NnRU5QUFNBSUE4OWw5cGhBQW1NbjBNNUVBd0J5bW4ra0VBSWF5KzlRaEFEQ0k2YWNhQVlEVG1YNXFFZ0E0aTkybk9BR0E0NWwrV2hBQU9KTHBweEVCZ0FQWWZUb1NBSGlLNmFjdkFZQ2RURC9kQ1FBOHh1NnpEQUdBZTVsK0ZpTUFjSnZwWjBrQ0FGZlpmZFltQUhDQjZTZUJBTUQvbUg1eUNBQjhaZnBKSXdDa3MvdkVFZ0J5bVg3Q0NRQ0pURDlzQWtBVXV3OHZDUUFSVEQrOEpnQXN6dlRETlFMQW11dyszQ1FBck1iMHc1MEVnSFdZZm5pSUFOQ2UzWWQ5QklER1REODhRd0JveWZURDh3U0FUdXcrSEVnQTZNSDB3K0VFZ09wTVA1eEVBQ2pLN3NQWkJJQnlURCtNSVFBVVl2cGhKQUZnUHJzUFV3Z0FNNWwrbUVnQW1NUDB3M1FDd0ZCMkgrb1FBQVl4L1ZDTkFIQTYwdzgxQ1FCbnNmdFFuQUJ3UE5NUExRZ0FSekw5MElnQWNBQzdEeDBKQUU4eC9kQ1hBTENUNllmdUJJREgySDFZaGdCd0w5TVBpeEVBYmpQOXNDUUI0Q3E3RDJzVEFDNHcvWkJBQVBnZjB3ODVCSUJ0cy9zUVNRRFNtWDZJSlFDNVREK0VFNEE0ZGgvNFFnQ0NtSDdnSlFHSVlQcUIxd1JnWlhZZmVJTUFyTW4wQXpjSndHcE1QM0FuQVZpRTNRY2VKUUR0bVg1Z0h3Rm96UFFEenhDQWZ1dytjQWdCNk1UMEF3Y1NnQjVNUDNBNEFTak43Z1BuRVlDaVREOXdOZ0VveC9RRFl3aEFGWFlmR0V3QTVqUDl3QlEvemY2QWROWWZtRVVBQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDUFVmN2NLamhZMjJvcjBBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn1dfQ==">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAD50lEQVR4nO3dvW0kRxSFUa6wMhSD/I1AhmyFoSgUiqLYMBSIEpGxzholjFY9vcOeuf1Tr+ocjwABNogPrx5RjeGHn3/59Q1e9cPVD0BtAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiLy8eoHYAd//fHTt1/+9uc/p/3oDz6hrK5FN/dOKMkRVtW79Wz8npCAStpextENCaieZ5s4tCEBERFQMa+Nk+OGkICICIiIgIgIiIiAiAiomNduJ4670xAQEQHV8+w4OfRKVUAlbW/i6At5AVW1pYwTXufwPtAIvFBGVd0dYZ8/fbn6EXhCdwG9vb19/vRFRlX0+1L9raHf//7x2ifhgR4n0IKB1LMCATUy6lOZgBoZ9abfHegB61E/ik2gBQPpcrUDamR0oRECamR0iZI70APWo5ONM4EWDKRzDBtQI6OjjXaErXKuHWfwCbRgIO1uroAaGe1oxoAaGe1iih3oAetRaN4JtGAgvUZA/yOjZwlohYy2m30HesB6tIUJ9D4D6QEBbSWjVY6w5zjXFkygFxlIjYAiMhLQDmbOyA60mznXIxNof1MNJAEdZZKMBHSs4TOyA51h4PXIBDrVeANJQBcYKaMan5E4zK97VelzrUZAqwarqmhGhQP6ntJhlctowIBW1aqqUEazBLSq/6r6L2nqgFZ1WFXPGQlokx6q6jMjAUXOD6u3jAS0v3Oq6qQkAZ3koKouz8hl6s5OO9QuT6cR0IuuWqs76eZGQO/o4e+vprd0GgH9q59Q7vWZTjNdQD2HstBzNzfDBlQolHsl0mnKB1Q6lHuF0mnKBDRYKAvlurnpLqCxQ7lXN52mu4DmUT2dRkBnG6ObGwGdZ7B0GgGdYch0GgEdaOBubgR0iBnSaQS0s3nSaQS0j9m6uRFQatp0GgG9bvJ0GgE9TTffEtATpHNPQJtI53sE9A7pPCagdbrZSEBL0nmKgP4jnRcISDeRqQOSTm7SgKSzl7kC0s3uZglIOgcZPyDpHGrYgHRzjgEDks6ZhgpIOucbISDdXKh2QNK5XNWApNOJYgHppjdlApJOnwoEJJ2e9RuQbkroMSDpFNLdf21WTy3dBUQtAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICJfAXYGA77jkAG0AAAAAElFTkSuQmCC">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAD50lEQVR4nO3dvW0kRxSFUa6wMhSD/I1AhmyFoSgUiqLYMBSIEpGxzholjFY9vcOeuf1Tr+ocjwABNogPrx5RjeGHn3/59Q1e9cPVD0BtAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiLy8eoHYAd//fHTt1/+9uc/p/3oDz6hrK5FN/dOKMkRVtW79Wz8npCAStpextENCaieZ5s4tCEBERFQMa+Nk+OGkICICIiIgIgIiIiAiAiomNduJ4670xAQEQHV8+w4OfRKVUAlbW/i6At5AVW1pYwTXufwPtAIvFBGVd0dYZ8/fbn6EXhCdwG9vb19/vRFRlX0+1L9raHf//7x2ifhgR4n0IKB1LMCATUy6lOZgBoZ9abfHegB61E/ik2gBQPpcrUDamR0oRECamR0iZI70APWo5ONM4EWDKRzDBtQI6OjjXaErXKuHWfwCbRgIO1uroAaGe1oxoAaGe1iih3oAetRaN4JtGAgvUZA/yOjZwlohYy2m30HesB6tIUJ9D4D6QEBbSWjVY6w5zjXFkygFxlIjYAiMhLQDmbOyA60mznXIxNof1MNJAEdZZKMBHSs4TOyA51h4PXIBDrVeANJQBcYKaMan5E4zK97VelzrUZAqwarqmhGhQP6ntJhlctowIBW1aqqUEazBLSq/6r6L2nqgFZ1WFXPGQlokx6q6jMjAUXOD6u3jAS0v3Oq6qQkAZ3koKouz8hl6s5OO9QuT6cR0IuuWqs76eZGQO/o4e+vprd0GgH9q59Q7vWZTjNdQD2HstBzNzfDBlQolHsl0mnKB1Q6lHuF0mnKBDRYKAvlurnpLqCxQ7lXN52mu4DmUT2dRkBnG6ObGwGdZ7B0GgGdYch0GgEdaOBubgR0iBnSaQS0s3nSaQS0j9m6uRFQatp0GgG9bvJ0GgE9TTffEtATpHNPQJtI53sE9A7pPCagdbrZSEBL0nmKgP4jnRcISDeRqQOSTm7SgKSzl7kC0s3uZglIOgcZPyDpHGrYgHRzjgEDks6ZhgpIOucbISDdXKh2QNK5XNWApNOJYgHppjdlApJOnwoEJJ2e9RuQbkroMSDpFNLdf21WTy3dBUQtAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICJfAXYGA77jkAG0AAAAAElFTkSuQmCC">
+<link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAALmUlEQVR4nO3ZsZEcVRSF4RYlDGKQTwQyZBMGURAKURCGAiERDBwMqaRFO7Mz09P93r3vfJ9Llaodzr/3zbsPHz9tAOT5afYHADCHAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAACh3s/+AICdPv/xy7X/9Nuf/4z8kqbeffj4afY3ANzrjdG/RgyuEQCghx3T/5IMvCYAQHVPTv9LMvCSH4GB0g5c/8P/te4EAKjrjL3WgG88AQEVDZhpz0EuAKCcMX+kOwUEACCUAAC1jPzDPPwIEACgkPGLnNwAAQCqmLXFsQ0QAIBQAgCUMPfP8MwjQAAAQgkAMF+FP8ArfMNgAgAQSgAAQgkAQCgBACar8/he50vGEACAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAGCy3/78Z/YnfFXnS8YQAIBQAgAQSgAAQgkAMF+Fx/cK3zCYAACEEgCghLl/gAf++b8JAEAsAQCqmPVneOaf/5sAAKWM3+LY9d8EAKhm5CInr/8mAACxBAAoZ8wf5uF//m/b9u7Dx0+zvwHgss9//HLGP2v6v3ABAHWdsdTW/xsBAEo7dq+t/0uegIAennwOMv2vCQDQyY4MmP5rBADo6o0YGP17CABAKD8CA4QSAIBQAgAQSgAm++vXf2d/AhBKAOb769d/ZQAY7/3sD+Crbw34/e+f534JEMIFUI6DABhDAIqSAeBsnoBK8y4EnMcF0IODADicAHQiA8CBBKAfGQAO4TeArvw8ADzJBdCegwDYRwAWIQPAozwBLcW7EHA/F8CaHATATQKwMhkA3uAJaH3ehYCLXABBHATASwIQRwaALzwBhfIuBLgA0jkIIJYAsG0yAJE8AfGddyGI4gLgAgcBJBAArpIBWJsAcIMMwKr8BsBd/DwA63EB8BgHASxDANhDBmABnoDYz7sQtOYC4AAOAuhIADiMDEAvnoA4mHch6MIFwFkcBFCcAHAuGYCyPAExgnchKMgFwFAOAqhDAJhABqACAWAaGYC5/AbAZH4egFlcAFThIIDBBIBaZACG8QRERd6FYAAXAKU5COA8AkADMgBn8AREG96F4FguAPpxEMAhBICuZACe5AmI3rwLwW4uABbhIIBHCQBLkQG4nycgFuRdCO7hAmBlDgJ4gwCwPhmAiwSAFDIAP/AbAFn8PADfuAAI5SAAASCaDJDMExB4FyKUCwC+cxAQRQDgRzJACE9AcJl3IZbnAoAbHASsSgDgLjLAejwBwQO8C7ESFwDs4SBgAQIA+8kArQkAPEsGaMpvAHAMPw/QjgsADuYgoAsBgFPIAPV5AoITeReiMhcAjOAgoCABgHFkgFI8AcFo3oUowgUA0zgImEsAYDIZYBZPQFCCdyHGcwFALQ4ChhEAqEgGGMATENTlXYhTuQCgAQcBZxAAaEMGOJYAQDMywFH8BgAt+XmA57kAoDcHAbsJAKxABtjBExCsw7sQD3EBwIIcBNxDAGBZMsDbPAHB4rwLcY0LAFI4CPjBuw8fP83+Bn7k/1LO5hpgE4BehIHDKUEyAWhPFXieDGQSgGUJA4+SgTQCkEUVuEkGcggAqsBlSrA8AeAqYWCTgaUJAI9RhUwysCQB4ACqkEMJViIAnEgYViUDaxAARlOFZchAdwJAFcLQlxI0JQCUpgqNyEA7AkA/qlCZDDQiAKxDGEpRgvoEgMWpwlwyUJkAEEoYRpKBmgQAvlOFsylBKQIAN6jC4WSgCAGAnYThSTIwnQDAkVThUTIwkQDA6VThHkowngDANMLwmgyMJABQiypsMjCKAEAPmWFQglMJADQWUgUZOMn72R8A3BYy9K+Z/lMJANQSu/Uv2f0xBADmMPQXmf6RBADOZejvZPrHEwA4jK3fwe5PJADwMEN/CNM/nQDAVYb+JKa/CAGAbbP1Q9j9agSALIZ+CtNfkwCwJkNfhOmvTABoz9YXZPdbEADaMPQtmP5GBIByDH1Tpr8dAWAaQ78Gu9+XADCCrV+S6e9OADiSoQ9h+tcgAOxh6DPZ/cUIADfYejbTvygB4CtDz0Wmf2ECEMfQcw+7n0AAVmbr2cH05xCAFRh6DmH60whAJ4aeM9j9WAJQlK1nANMfTgAmM/RMYfrZBACi2H1eEgCIYPp5TQBgcaafawQA1mT3uUkAYDWmnzsJAKzD9PMQAYD27D77CAA0Zvp5hgBAS6af5wkAdGL3OZAAQA+mn8MJAFRn+jmJAEBRdp+zCQCUY/oZQwCgENPPSAIA89l9phAAmMn0M5EAwBymn+kEAIay+9QhADCI6acaAYDTmX5qEgA4i92nOAGA45l+WhAAOJLppxEBgAPYfToSAHiK6acvAYCdTD/dCQA8xu6zDAGAe5l+FiMAcJvpZ0kCAFfZfdYmAHCB6SeBAMD/mH5yCAB8ZfpJIwCks/vEEgBymX7CCQCJTD9sAkAUuw8vCQARTD+8JgAszvTDNQLAmuw+3CQArMb0w50EgHWYfniIANCe3Yd9BIDGTD88QwBoyfTD8wSATuw+HEgA6MH0w+EEgOpMP5xEACjK7sPZBIByTD+MIQAUYvphJAFgPrsPUwgAM5l+mEgAmMP0w3QCwFB2H+oQAAYx/VCNAHA60w81CQBnsftQnABwPNMPLQgARzL90IgAcAC7Dx0JAE8x/dCXALCT6YfuBIDH2H1YhgBwL9MPixEAbjP9sCQB4Cq7D2sTAC4w/ZBAAPgf0w85BIBts/sQSQDSmX6IJQC5TD+EE4A4dh/4QgCCmH7gJQGIYPqB1wRgZXYfeIMArMn0AzcJwGpMP3AnAViE3QceJQDtmX5gHwFozPQDzxCAfuw+cAgB6MT0AwcSgB5MP3A4ASjN7gPnEYCiTD9wNgEox/QDYwhAFXYfGEwA5jP9wBQ/zf6AdNYfmEUAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACPUf7cKjhY22or0AAAAASUVORK5CYII=">
+<title>트래블릿</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B3438;
+    --teal:#2F6B5C;
+    --teal-light:#E4EEE9;
+    --cream:#F3ECDB;
+    --paper:#FFFDF8;
+    --coral:#C15A33;
+    --coral-light:#F6E1D1;
+    --slate:#6E7B76;
+    --line:#E0D2B2;
+    --gold:#D9A441;
+    --gold-light:#F7EACB;
+    --blue:#3D6B8A;
+    --plum:#8A3A44;
+    --font-display:'Fraunces', serif;
+    --font-body:'Inter', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;}
+  body{min-height:100vh;}
+  #root{max-width:520px;margin:0 auto;min-height:100vh;background:var(--cream);position:relative;padding-bottom:88px;}
+
+  ::selection{background:var(--coral-light);}
+
+  a{color:inherit;}
+  button{font-family:var(--font-body);cursor:pointer;}
+  input,textarea,select{font-family:var(--font-body);}
+
+  /* ---------- App title bar ---------- */
+  .app-bar{
+    display:flex;align-items:center;gap:7px;
+    padding:18px 20px 4px;
+  }
+  .app-bar .st-leaf{margin-right:0;}
+  .app-name{font-family:var(--font-display);font-weight:700;font-size:19px;color:var(--ink);letter-spacing:-0.01em;}
+
+  /* ---------- Header / Boarding pass hero ---------- */
+  .hero{
+    margin:16px 16px 20px;
+    background:linear-gradient(135deg, #1B3438 0%, #142629 100%);
+    border-radius:var(--radius);
+    color:var(--paper);
+    display:flex;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(20,38,41,0.3);
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20420%20220%27%3E%3Cpath%20d%3D%27M420%2C220%20C300%2C220%20245%2C30%20420%2C-10%20Z%27%20fill%3D%27%23D9A441%27%20opacity%3D%270.16%27/%3E%3Cpath%20d%3D%27M420%2C220%20C340%2C220%20300%2C95%20420%2C40%20Z%27%20fill%3D%27%23C15A33%27%20opacity%3D%270.20%27/%3E%3Cpath%20d%3D%27M420%2C220%20C375%2C220%20358%2C150%20420%2C118%20Z%27%20fill%3D%27%23FFFDF9%27%20opacity%3D%270.09%27/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    background-size:65% auto;
+    z-index:0;
+  }
+  .hero-main{flex:1;padding:20px 18px;position:relative;z-index:1;}
+  .hero-eyebrow{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:#CBB98C;
+    margin-bottom:8px;
+  }
+  .hero-route{
+    font-family:var(--font-display);
+    font-size:28px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    line-height:1.1;
+  }
+  .hero-route .plane{color:var(--gold);font-size:18px;}
+  .hero-dates{
+    margin-top:10px;
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:#D9CDAE;
+  }
+  .hero-tagline{
+    font-family:var(--font-display);
+    font-style:italic;
+    font-weight:500;
+    font-size:12.5px;
+    color:var(--gold);
+    margin-top:9px;
+    opacity:0.95;
+  }
+  .hero-stub{
+    width:92px;
+    border-left:2px dashed rgba(255,253,248,0.35);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+    position:relative;
+    z-index:1;
+    padding:12px 8px;
+  }
+  .hero-stub::before,.hero-stub::after{
+    content:"";
+    position:absolute;
+    left:-8px;
+    width:16px;height:16px;
+    background:var(--cream);
+    border-radius:50%;
+  }
+  .hero-stub::before{top:-8px;}
+  .hero-stub::after{bottom:-8px;}
+  .hero-stub .pax-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;color:#CBB98C;text-transform:uppercase;}
+  .hero-stub .pax-num{font-family:var(--font-display);font-size:26px;font-weight:600;}
+
+  /* ---------- Tabs ---------- */
+  .tabbar{
+    position:fixed;
+    bottom:0;left:0;right:0;
+    max-width:520px;
+    margin:0 auto;
+    background:var(--paper);
+    border-top:1px solid var(--line);
+    display:flex;
+    padding:8px 12px calc(8px + env(safe-area-inset-bottom));
+    gap:6px;
+    z-index:40;
+  }
+  .tab-btn{
+    flex:1;
+    border:none;
+    background:transparent;
+    border-radius:10px;
+    padding:9px 4px 7px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:3px;
+    color:var(--slate);
+    font-size:12px;
+    font-weight:600;
+    transition:background .15s ease, color .15s ease;
+  }
+  .tab-btn .tag-icon{font-size:18px;}
+  .tab-btn.active{background:var(--coral-light);color:var(--coral);}
+
+  .content{padding:0 16px;}
+  .section-title{
+    font-family:var(--font-display);
+    font-size:20px;
+    font-weight:600;
+    margin:6px 2px 12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .section-title .st-label{display:flex;align-items:center;}
+  .section-title .st-leaf{margin-right:7px;flex-shrink:0;}
+  .section-sub{font-size:12.5px;color:var(--slate);margin:-8px 2px 14px;}
+
+  .btn{
+    border:none;border-radius:9px;padding:8px 13px;font-size:13px;font-weight:600;
+  }
+  .btn-teal{background:var(--teal);color:var(--paper);}
+  .btn-coral{background:var(--coral);color:var(--paper);}
+  .btn-ghost{background:transparent;color:var(--teal);border:1px solid var(--teal-light);}
+  .btn-outline{background:var(--paper);color:var(--ink);border:1px solid var(--line);}
+  .btn-sm{padding:5px 9px;font-size:12px;border-radius:7px;}
+  .btn-icon{background:transparent;border:none;color:var(--slate);padding:4px;font-size:15px;line-height:1;border-radius:6px;}
+  .btn-confirm-delete{background:var(--coral)!important;color:var(--paper)!important;font-size:11px!important;font-weight:700;padding:4px 8px!important;width:auto;}
+  .btn-icon:hover{background:var(--teal-light);color:var(--teal);}
+
+  /* ---------- Day card (ticket stub) ---------- */
+  .day-card{
+    background:var(--paper);
+    border-radius:var(--radius);
+    margin-bottom:16px;
+    display:flex;
+    box-shadow:0 2px 8px rgba(20,38,41,0.08);
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .day-side{
+    width:64px;
+    flex-shrink:0;
+    background:linear-gradient(165deg, var(--gold-light) 0%, var(--coral-light) 100%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:14px 4px;
+    position:relative;
+  }
+  .day-side .wk{font-family:var(--font-mono);font-size:11px;color:var(--coral);letter-spacing:.05em;font-weight:600;}
+  .day-side .num{font-family:var(--font-display);font-size:26px;font-weight:600;color:var(--ink);line-height:1;margin:2px 0;}
+  .day-side .mon{font-family:var(--font-mono);font-size:10px;color:var(--slate);}
+  .day-divider{
+    width:0;border-left:2px dashed var(--line);position:relative;
+  }
+  .day-divider::before,.day-divider::after{
+    content:"";position:absolute;left:-7px;width:14px;height:14px;background:var(--cream);border-radius:50%;
+  }
+  .day-divider::before{top:-1px;}
+  .day-divider::after{bottom:-1px;}
+  .day-body{flex:1;padding:14px 14px 12px 18px;min-width:0;}
+  .day-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:2px;}
+  .day-title{font-weight:700;font-size:14.5px;}
+  .day-tip{font-size:12px;color:var(--slate);margin:0 0 10px;line-height:1.5;}
+
+  .item-row{
+    display:flex;gap:10px;padding:8px 0;border-top:1px solid #F0EBDD;
+  }
+  .item-row:first-of-type{border-top:none;}
+  .item-time{
+    font-family:var(--font-mono);font-size:11px;color:var(--slate);width:58px;flex-shrink:0;padding-top:2px;
+  }
+  .item-dot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex-shrink:0;}
+  .item-main{flex:1;min-width:0;}
+  .item-title{font-size:13.5px;font-weight:600;}
+  .item-title.done{text-decoration:line-through;color:var(--slate);}
+  .item-title-link{font-size:13.5px;font-weight:600;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:4px;}
+  .item-title-link:hover{color:var(--coral);}
+  .item-title-link:hover .item-title{text-decoration:underline;}
+  .item-title-link.done .item-title{text-decoration:line-through;color:var(--slate);}
+  .item-title-link .ext-icon{opacity:0.5;flex-shrink:0;}
+  .item-link-chip{
+    display:inline-flex;align-items:center;gap:3px;
+    margin-top:5px;padding:3px 9px;
+    background:var(--teal-light);color:var(--teal);
+    border-radius:12px;font-size:11px;font-weight:600;
+    text-decoration:none;
+  }
+  .item-link-chip:hover{background:var(--teal);color:var(--paper);}
+  .item-place{font-size:12px;color:var(--slate);}
+  .item-note{font-size:11.5px;color:var(--slate);margin-top:2px;line-height:1.5;}
+  .item-actions{display:flex;gap:2px;flex-shrink:0;}
+  .item-check{margin-top:3px;flex-shrink:0;width:15px;height:15px;accent-color:var(--teal);}
+
+  .add-item-btn{
+    width:100%;margin-top:10px;padding:8px;border-radius:8px;border:1px dashed var(--line);
+    background:transparent;color:var(--teal);font-size:12.5px;font-weight:600;
+  }
+  .add-item-btn:hover{background:var(--teal-light);}
+
+  /* ---------- Expense ---------- */
+  .exp-summary{
+    background:var(--ink);color:var(--paper);border-radius:var(--radius);padding:18px;margin-bottom:16px;
+    display:flex;justify-content:space-between;align-items:flex-end;
+  }
+  .exp-summary .lbl{font-family:var(--font-mono);font-size:11px;color:#CBB98C;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;}
+  .exp-summary .amt{font-family:var(--font-display);font-size:30px;font-weight:600;}
+  .exp-summary .count{font-family:var(--font-mono);font-size:12px;color:#D9CDAE;text-align:right;}
+
+  .exp-group-label{font-family:var(--font-mono);font-size:11.5px;color:var(--slate);margin:16px 2px 8px;letter-spacing:.04em;}
+  .exp-row{
+    background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin-bottom:8px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .exp-info{flex:1;min-width:0;}
+  .exp-desc{font-size:13.5px;font-weight:600;}
+  .exp-meta{font-size:11.5px;color:var(--slate);margin-top:1px;}
+  .exp-note{font-size:11.5px;color:var(--slate);margin-top:3px;line-height:1.5;font-style:italic;}
+  .exp-row.planned{border-style:dashed;background:var(--gold-light);}
+  .exp-badge{display:inline-block;font-size:10px;font-weight:700;border-radius:8px;padding:1px 7px;margin-right:6px;vertical-align:1px;}
+  .badge-planned{background:var(--gold);color:var(--paper);}
+  .badge-confirmed{background:var(--teal-light);color:var(--teal);}
+  .exp-amt.amt-planned{color:var(--gold);}
+  .exp-sub-totals{font-family:var(--font-mono);font-size:11px;color:#D9CDAE;margin-top:5px;}
+  .exp-amt{font-family:var(--font-mono);font-weight:600;font-size:14px;flex-shrink:0;}
+  .exp-actions{display:flex;gap:0;flex-shrink:0;}
+
+  .payer-summary{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-top:18px;}
+  .payer-row{display:flex;justify-content:space-between;padding:5px 0;font-size:12.5px;}
+  .payer-row .pname{font-weight:600;}
+  .payer-row .pamt{font-family:var(--font-mono);color:var(--slate);}
+
+  /* ---------- Info tab ---------- */
+  .info-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:14px;
+  }
+  .info-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .info-card-title{font-family:var(--font-display);font-weight:600;font-size:15px;display:flex;align-items:center;gap:7px;}
+  .info-card-title .ic{font-size:16px;}
+  .info-line{font-size:13px;line-height:1.65;color:var(--ink);}
+  .info-line b{font-weight:600;}
+  .info-sub{font-size:11.5px;color:var(--slate);margin-top:4px;line-height:1.6;}
+  .addr-box{
+    background:var(--cream);border-radius:8px;padding:9px 11px;font-family:var(--font-mono);font-size:12.5px;
+    display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:6px;
+  }
+  .traveler-chip{
+    display:inline-flex;align-items:center;gap:6px;background:var(--teal-light);color:var(--teal);
+    border-radius:20px;padding:5px 11px 5px 12px;font-size:12.5px;font-weight:600;margin:3px 4px 3px 0;
+  }
+  .traveler-chip .role{color:var(--slate);font-weight:500;font-size:11px;}
+  .traveler-chip button{background:none;border:none;color:var(--slate);font-size:13px;padding:0 0 0 2px;}
+  .flight-row{display:flex;justify-content:space-between;align-items:flex-start;padding:8px 0;border-top:1px dashed var(--line);gap:10px;}
+  .flight-row:first-of-type{border-top:none;}
+  .flight-label{font-weight:700;font-size:13px;}
+  .flight-detail{font-size:11.5px;color:var(--slate);margin-top:2px;}
+  .flight-date{font-family:var(--font-mono);font-size:11px;color:var(--slate);white-space:nowrap;}
+  .notes-area{
+    width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;font-size:13px;font-family:var(--font-body);
+    background:var(--cream);resize:vertical;min-height:70px;color:var(--ink);
+  }
+  .notes-area:focus{outline:2px solid var(--teal-light);border-color:var(--teal);}
+
+  .empty-state{
+    text-align:center;padding:40px 20px;color:var(--slate);
+  }
+  .empty-state .em-title{font-family:var(--font-display);font-size:16px;color:var(--ink);margin-bottom:6px;font-weight:600;}
+  .empty-state .em-sub{font-size:12.5px;}
+
+  /* ---------- Modal ---------- */
+  .modal-backdrop{
+    position:fixed;inset:0;background:rgba(20,38,41,0.5);z-index:100;
+    display:flex;align-items:flex-end;justify-content:center;
+  }
+  .modal-backdrop.hidden{display:none;}
+  .modal-sheet{
+    width:100%;max-width:520px;background:var(--paper);border-radius:18px 18px 0 0;
+    max-height:88vh;max-height:88dvh;overflow-y:auto;padding:20px 18px calc(20px + env(safe-area-inset-bottom));
+    animation:slideup .18s ease-out;
+    display:flex;flex-direction:column;
+  }
+  @keyframes slideup{from{transform:translateY(24px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+  .modal-title{font-family:var(--font-display);font-size:18px;font-weight:600;margin-bottom:14px;}
+  .field{margin-bottom:13px;}
+  .field label{display:block;font-size:12px;font-weight:600;color:var(--slate);margin-bottom:5px;}
+  .field input[type=text],.field input[type=number],.field input[type=date],.field select,.field textarea{
+    width:100%;border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:13.5px;background:var(--cream);color:var(--ink);
+  }
+  .field textarea{min-height:60px;resize:vertical;}
+  .field-check{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;}
+  .modal-actions{display:flex;gap:8px;margin-top:16px;position:sticky;bottom:0;background:var(--paper);padding-top:10px;padding-bottom:2px;flex-shrink:0;}
+  .modal-actions .btn{flex:1;padding:11px;font-size:14px;}
+  .modal-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:18px;color:var(--slate);}
+  .modal-sheet{position:relative;}
+  .modal-delete-link{display:block;text-align:center;color:var(--coral);font-size:12.5px;font-weight:600;margin-top:14px;background:none;border:none;width:100%;padding:6px;flex-shrink:0;}
+
+  .toast{
+    position:fixed;bottom:96px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:var(--paper);padding:9px 16px;border-radius:20px;font-size:12.5px;
+    z-index:200;box-shadow:0 6px 18px rgba(0,0,0,0.25);opacity:0;transition:opacity .2s ease;pointer-events:none;
+  }
+  .toast.show{opacity:1;}
+
+  .loading-wrap{display:flex;align-items:center;justify-content:center;min-height:60vh;color:var(--slate);font-size:13px;font-family:var(--font-mono);}
+
+  .day-menu-btn{background:none;border:none;color:var(--slate);font-size:16px;padding:2px 4px;}
+
+  .share-note{
+    display:flex;gap:8px;align-items:flex-start;background:var(--coral-light);border-radius:10px;padding:11px 12px;margin:0 2px 16px;font-size:11.5px;color:#8A4326;line-height:1.6;
+  }
+</style>
+</head>
+<body>
+<div id="root"><div class="loading-wrap">불러오는 중…</div></div>
+<div id="toast" class="toast"></div>
+<div id="modal-root"></div>
+
+<!-- ===== Firebase 연동 (claude.ai 없이 가족 실시간 공유용) =====
+     아래 firebaseConfig에 본인 Firebase 프로젝트 설정값을 붙여넣으세요.
+     Firebase 콘솔 > 프로젝트 설정 > 일반 > "내 앱" 섹션에서 확인 가능해요.
+     Firestore Database도 미리 만들어두셔야 해요 (테스트 모드로 시작 가능).
+-->
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBpfCZYLH1d13VvJ_w2EMjlWUGd12Kjcs8",
+    authDomain: "tripperty-5c5d4.firebaseapp.com",
+    projectId: "tripperty-5c5d4",
+    storageBucket: "tripperty-5c5d4.firebasestorage.app",
+    messagingSenderId: "374511141037",
+    appId: "1:374511141037:web:c733b070f45f3b068bc624"
+  };
+
+  var TRAVELLET_COLLECTION = 'travellet-sydney';
+  var firebaseReady = false;
+  var db = null;
+
+  try{
+    if(firebaseConfig.apiKey && firebaseConfig.apiKey.indexOf('YOUR_') !== 0){
+      firebase.initializeApp(firebaseConfig);
+      db = firebase.firestore();
+      firebaseReady = true;
+    } else {
+      console.warn('Firebase 설정이 아직 비어있어요. firebaseConfig를 채워주세요.');
+    }
+  }catch(e){
+    console.error('Firebase 초기화 실패:', e);
+  }
+
+  // 저장소 우선순위: ① Firebase(설정 시) → ② claude.ai 게시 환경의 내장 공유 저장소 → ③ 인메모리(마지막 폴백)
+  var nativeStorage = window.storage || null; // claude.ai 게시 환경이 제공하는 공유 저장소 보존
+  var memoryStore = {};
+  window.storage = {
+    get: function(key){
+      if(firebaseReady){
+        return db.collection(TRAVELLET_COLLECTION).doc(key).get().then(function(snap){
+          if(!snap.exists) throw new Error('not found: ' + key);
+          return { key: key, value: snap.data().value };
+        });
+      }
+      if(nativeStorage && typeof nativeStorage.get === 'function'){
+        return nativeStorage.get(key, true);
+      }
+      return new Promise(function(resolve, reject){
+        if(!(key in memoryStore)) return reject(new Error('not found: ' + key));
+        resolve({ key: key, value: memoryStore[key] });
+      });
+    },
+    set: function(key, value){
+      if(firebaseReady){
+        return db.collection(TRAVELLET_COLLECTION).doc(key).set({ value: value, updatedAt: Date.now() }).then(function(){
+          return { key: key, value: value };
+        });
+      }
+      if(nativeStorage && typeof nativeStorage.set === 'function'){
+        return nativeStorage.set(key, value, true);
+      }
+      memoryStore[key] = value;
+      return Promise.resolve({ key: key, value: value });
+    }
+  };
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- utilities ---------------- */
+  function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+
+  function fmtMoney(n){
+    var v = Math.round(Number(n)||0);
+    return v.toLocaleString('ko-KR') + '원';
+  }
+
+  function weekdayKo(dateStr){
+    var wk = ['일','월','화','수','목','금','토'];
+    var d = new Date(dateStr+"T00:00:00");
+    return wk[d.getDay()];
+  }
+  function fmtDateShort(dateStr){
+    var parts = dateStr.split('-');
+    return parts[1]+"."+parts[2];
+  }
+
+  function linkDomain(url){
+    try{
+      var host = new URL(url).hostname.replace(/^www\./,'');
+      var names = {
+        'experiences.myrealtrip.com':'마이리얼트립',
+        'instagram.com':'인스타그램',
+        'sydneyoperahouse.com':'오페라하우스 공식',
+        'cityofsydneyleisure.com.au':'시드니시 공식',
+        'nationalparks.nsw.gov.au':'NSW 국립공원 공식',
+        'shnc.org':'서리힐즈 마켓 공식',
+        'pancakesontherocks.au':'팬케이크 온 더 락스',
+        '789bbq.com':'678 공식',
+        'mca.com.au':'MCA 공식',
+        'therocks.com':'더 락스 공식',
+        'darlingharbour.com':'달링하버 공식',
+        'symbiozoo.com.au':'Symbio 동물원 공식',
+        'woolworths.com.au':'울워스',
+        'rydges.com':'Rydges 호텔 공식',
+        'sydneyairport.com.au':'시드니공항 공식',
+        'airport.kr':'인천공항 공식',
+        'google.com':'구글 지도',
+        'en.wikipedia.org':'위키백과',
+        'sydney.edu.au':'시드니대 공식',
+        'qvb.com.au':'QVB 공식',
+        'westfield.com.au':'웨스트필드 공식',
+        'barangaroo.com':'바랑가루 공식',
+        'paddysmarkets.com.au':'패디스 마켓 공식',
+        'sydneycoveoysterbar.com':'오이스터바 공식'
+      };
+      return names[host] || host;
+    }catch(e){ return '링크'; }
+  }
+
+  var toastTimer = null;
+  function showToast(msg){
+    var t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 1800);
+  }
+
+  /* ---------------- category maps ---------------- */
+  var ITEM_CATS = {
+    '이동':   {color:'var(--slate)'},
+    '관광':   {color:'var(--teal)'},
+    '식사':   {color:'var(--coral)'},
+    '투어':   {color:'var(--gold)'},
+    '숙소':   {color:'var(--blue)'},
+    '쇼핑':   {color:'var(--plum)'},
+    '기타':   {color:'var(--slate)'}
+  };
+
+  var LEAF_ICON = '<svg class="st-leaf" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5C7.5 6 5.2 12 8 18c1.8 2.8 5.6 3.7 8.6 2.7-0.8-6.4-1.8-13.4-4.6-18.2Z" stroke="var(--teal)" stroke-width="1.4" stroke-linejoin="round"/><path d="M8.3 12.8c2-1 4.2-1 6.3 0.2" stroke="var(--teal)" stroke-width="1.2" stroke-linecap="round"/></svg>';
+
+  /* ---------------- default data ---------------- */
+  function defaultTravelers(){
+    return [
+      {id:'t1', name:'할머니', role:'70대'},
+      {id:'t2', name:'어른 1', role:'어른'},
+      {id:'t3', name:'어른 2', role:'어른'},
+      {id:'t4', name:'어른 3', role:'어른'},
+      {id:'t5', name:'어른 4', role:'어른'},
+      {id:'t6', name:'초5 아이', role:'초5'},
+      {id:'t7', name:'초2 아이 1', role:'초2'},
+      {id:'t8', name:'초2 아이 2', role:'초2'},
+      {id:'t9', name:'초2 아이 3', role:'초2'}
+    ];
+  }
+
+  function defaultTripInfo(){
+    return {
+      accommodation:{
+        name:'서리힐즈 숙소',
+        address:'139 Commonwealth Street, Surry Hills, NSW 2010, Australia',
+        checkIn:'2026-09-03', checkOut:'2026-09-08'
+      },
+      lastNightHotel:{
+        name:'Rydges Sydney Airport',
+        address:'Sydney Airport, Mascot NSW 2020, Australia',
+        note:'9/8 본다이비치 역방향 투어 마지막 코스로 차량이 바로 드롭 · 9/9 아침 07:55 출국'
+      },
+      flights:[
+        {id:'f1', label:'인천 → 시드니 (대한항공 직항)', date:'09.02(수)', detail:'19:10 인천 출발 → 9/3(목) 06:20 시드니 도착 · 10시간 10분'},
+        {id:'f2', label:'시드니 → 인천 (대한항공 직항)', date:'09.09(수)', detail:'07:55 시드니 출발 → 17:35 인천 도착'}
+      ],
+      travelers: defaultTravelers(),
+      notes:''
+    };
+  }
+
+  function mkItem(time, title, place, cat, note, link){
+    return {id:uid(), time:time, title:title, place:place||'', cat:cat, note:note||'', done:false, link:link||''};
+  }
+
+  function defaultItinerary(){
+    return [
+      { id:'d1', date:'2026-09-03', title:'도착 + 공항픽업 도심 투어',
+        tip:'프라이빗 단독투어(차량, 한국어). 보통 항공편 도착 후 1시간 뒤 공항 Public Pick up(주차타워 쪽) 미팅. 캐리어 사이즈·개수 사전 전달 필수(성인5+아동4). 아래 시간은 도착 06:20 기준 예상이라 현장 상황에 따라 달라질 수 있어요. 선택 코스는 시드니대학교 + Mrs Macquarie\'s Chair로 확정 — 예약 시 여행사에 전달하세요.',
+        items:[
+          mkItem('06:20','시드니 공항 도착','대한항공 직항 · 국제선','이동','','https://www.sydneyairport.com.au/'),
+          mkItem('07:20','공항 Public Pickup 미팅','공항 앞 주차타워 쪽 · 30분 소요','투어','','https://experiences.myrealtrip.com/products/3441083'),
+          mkItem('08:00~09:00','시드니대학교','60분 · 선택 확정 · 고딕 캠퍼스 인생샷','투어','','https://www.sydney.edu.au/'),
+          mkItem('09:00~10:00','Bondi Beach','60분 · 아이스버그 인생샷·티타임','투어','','https://en.wikipedia.org/wiki/Bondi_Beach'),
+          mkItem('10:00~11:00','Dudley Page Reserve','60분 · 시드니 스카이라인 전망','투어','','https://www.google.com/maps/search/?api=1&query=Dudley+Page+Reserve+Sydney'),
+          mkItem('11:00~12:00','Gap Park, Watsons Bay','60분 · 절벽 뷰','투어','','https://www.google.com/maps/search/?api=1&query=The+Gap+Park+Watsons+Bay+Sydney'),
+          mkItem('12:00~12:40',"Mrs Macquarie's Chair",'40분 · 선택 확정 · 하버뷰 명당','투어','','https://en.wikipedia.org/wiki/Mrs_Macquarie%27s_Chair'),
+          mkItem('13:00 전후','숙소 앞 Drop off · 체크인','139 Commonwealth St','숙소'),
+          mkItem('저녁','해리스 팜 마켓 장보기','Redfern점, 숙소 도보 15분 · 호주 로컬 청과·치즈·꿀 · 바로 옆 Coles에서 생필품 보충','쇼핑','','https://harrisfarm.com.au/pages/redfern'),
+          mkItem('저녁','저녁 식사 (미정)','','식사')
+        ]},
+      { id:'d2', date:'2026-09-04', title:'하이드파크·안작 기념관 + 페더데일·블루마운틴 투어',
+        tip:'마이리얼트립 호주무한투어(확정). 11:30 집결, 약 8시간 30분 소요, 21:00~22:00 시내 하차. 오전엔 숙소에서 간단히 먹고 하이드파크·안작 기념관 산책 후 달링하버 놀이터로 걸어 내려가며 집결. 저녁 식사는 블루마운틴 근처 마을에서 취향대로(태국·한식·호주식·일식 등) 각자 결제. 별보기 포인트는 날씨 좋으면 은하수까지 볼 수 있어요 — 늦게 끝나니 다음날 오전은 느슨하게 잡아뒀어요. 시티·페더데일 픽업 모두 시티에서 하차.',
+        items:[
+          mkItem('아침','숙소에서 간단한 아침','','식사'),
+          mkItem('09:30~10:30','하이드파크 산책 + 안작 전쟁기념관','Anzac Memorial · 무료 · 한국전 참전 기록 · 아이들 뛰어놀 공간','관광','','https://www.anzacmemorial.nsw.gov.au/'),
+          mkItem('10:30~11:00','달링하버 방향으로 도보 이동','걸어 내려가며 자연스럽게 집결지 방향으로','이동'),
+          mkItem('11:00~11:20','달링쿼터 놀이터','아이들 30분 방전 · 물놀이·미끄럼틀 무료 · 8시간 투어 전 에너지 빼기','관광','','https://www.google.com/maps/search/?api=1&query=Darling+Quarter+Playground'),
+          mkItem('11:20','투어 집결 (10분 전 도착)','집결지 바우처 확인 · 마이리얼트립 호주무한투어','이동','','https://experiences.myrealtrip.com/products/3442344'),
+          mkItem('11:30','투어 출발','약 8시간 30분 소요','투어','','https://experiences.myrealtrip.com/products/3442344'),
+          mkItem('낮','페더데일 동물원 (옵션)','60분 · 코알라·웜뱃·쿼카·캥거루·왈라비 · 뉴페별 옵션','투어','','https://www.featherdale.com.au/'),
+          mkItem('오후','시크릿 포인트','가이드가 엄선한 히든 스팟 (가이드마다 다름)','투어'),
+          mkItem('오후','세자매봉 (에코 포인트)','블루마운틴 대표 전망대 · 원주민 전설','투어','','https://www.bluemts.com.au/info/towns-villages/katoomba/echo-point/'),
+          mkItem('오후','링컨스 락 (킹스 테이블 랜드)','SNS 인증샷 명소 · 웨딩락·플랫락·허니문락','투어','','https://www.google.com/maps/search/?api=1&query=Kings+Tableland+Lincolns+Rock'),
+          mkItem('저녁 무렵','선셋 코스 (노을)','블루마운틴 보라빛 노을 포토 타임','투어'),
+          mkItem('저녁','저녁 식사','블루마운틴 근처 마을 · 취향대로(태국·한식·호주식·일식·티벳식) · 각자 결제','식사'),
+          mkItem('밤','별보기 시크릿 포인트','운 좋으면 은하수','투어'),
+          mkItem('21:00~22:00','시드니 시내 복귀','시티에서 하차 · 날씨·교통 따라 변동','이동'),
+          mkItem('밤','숙소 복귀 · 취침','늦은 귀가라 바로 취침','숙소')
+        ]},
+      { id:'d3', date:'2026-09-05', title:'오페라하우스 공연(14:00) + 크로눌라 럭비 직관',
+        tip:'⚠️ 빡빡한 하루 — 낮 공연 후 바로 크로눌라로 이동해 저녁 럭비. 점심을 든든히 먹어두세요(저녁은 경기장 간식). 전날 야경투어로 늦게 잤으니 오전은 푹 쉬고, 밤 11시경 귀가하지만 다음날(9/6)은 마켓·크루즈라 늦잠 가능. 공연은 12세 이상 권장이라 초2 아이들은 조용히 앉기 연습 살짝 시켜두면 좋아요. 럭비 GA 자유석은 40분 전 도착, 다들 두꺼운 겉옷+어머님 담요/핫팩 필수.',
+        items:[
+          mkItem('오전','늦잠 · 숙소에서 여유','전날 야경투어로 늦게 귀가','기타'),
+          mkItem('12:00~13:15','점심 든든히','Circular Quay 방향으로 이동하며 · 저녁은 경기장 간식이라 점심 충실히','식사'),
+          mkItem('13:30','오페라하우스 도착 · 외관 사진','공연 90분 전 포이어 오픈','관광','','https://www.sydneyoperahouse.com/'),
+          mkItem('14:00~16:00','유센 형제 피아노 공연','콘서트홀 · 풀랑크 두 대의 피아노 협주곡 + 레스피기 로마의 소나무 · 밝고 경쾌','투어','','https://www.sydneyoperahouse.com/sydney-symphony-orchestra/2026-season/lucas-arthur-jussen-poulenc'),
+          mkItem('16:00~16:30','서큘러키 → 크로눌라 기차 탑승','약 1시간 소요','이동'),
+          mkItem('17:30~18:30','크로눌라 도착 · 몰에서 요기','간단히 · 화장실 · 경기장까지 도보','식사'),
+          mkItem('18:50','샤크 파크 입장 (40분 전)','GA 자유석 · 앞쪽 중앙 자리 확보','투어'),
+          mkItem('19:30','크로눌라 샤크스 vs 멜버른 스톰','Ocean Protect Stadium · GA 자유석 + 샤크스 모자 · 저녁은 미트파이·핫칩','투어','','https://www.sharks.com.au/'),
+          mkItem('21:00~21:30','경기 종료 (또는 후반 중반 일찍 퇴장)','인파 피하려면 9시경 먼저 나오기','이동'),
+          mkItem('밤','기차로 귀가','크로눌라역 → 센트럴 → 숙소 · 23시경 도착','이동')
+        ]},
+      { id:'d4', date:'2026-09-06', title:'록스 마켓 + MCA + 런치 크루즈 + 달링하버 산책',
+        tip:'록스 마켓 바로 옆이 MCA라 동선이 딱 맞아요. 록스→달링하버→헤이마켓→서리힐즈로 남쪽으로 내려오는 한 바퀴 동선. 크루즈는 뷔페라 아이들 골라 먹기 좋아요. 성인5+아이4 기준 약 $886 · 음료 불포함(현장 결제). ※서리힐즈 마켓은 첫째 토요일에만 열려서 일요일인 이날은 안 해요 — 대신 록스·패디스 마켓으로 충분해요.',
+        items:[
+          mkItem('아침','아침 식사 (미정)','','식사'),
+          mkItem('오전','더 락스 마켓','하버브리지 아래 골목 · 공예품·기념품 · 10am-5pm','쇼핑','','https://www.therocks.com/whats-on/the-rocks-markets'),
+          mkItem('오전','MCA 현대미술관','록스 마켓 바로 옆 · Tony Albert 전시 · 무료','관광','','https://www.mca.com.au/'),
+          mkItem('12:20','달링하버로 이동','록스에서 도보 15~20분 또는 택시','이동'),
+          mkItem('13:00~15:00','디럭스 뷔페 런치 크루즈','King St Wharf 5 · 성인 $110/아이 $84 · 샐러드·메인·디저트 뷔페 · 일요일 운영','식사','','https://experiences.myrealtrip.com/products/3441083'),
+          mkItem('15:00~16:00','달링하버 산책','하선 후 워터프론트 산책 · 놀이터 있음','관광','','https://www.darlingharbour.com/'),
+          mkItem('오후','패디스 마켓','Haymarket · 달링하버에서 도보 10분 · 저렴한 기념품·먹거리','쇼핑','','https://www.paddysmarkets.com.au/'),
+          mkItem('늦은 오후','숙소 복귀','패디스에서 도보 10분','이동'),
+          mkItem('저녁','저녁 식사 (미정)','점심 뷔페가 늦어서 가볍게','식사')
+        ]},
+      { id:'d5', date:'2026-09-07', title:'포트스테판 사막투어',
+        tip:'[힐링]/[실속]/[품격] 옵션에 따라 10:30~12:50 일정이 달라요. 와인 시음은 무료 서비스이고 어린이 음료는 별도 제공되지 않아요. 일정 순서는 현지 교통·날씨에 따라 변경될 수 있어요. 복귀가 늦을 수 있어 저녁은 가볍게 잡는 걸 추천해요.',
+        items:[
+          mkItem('06:50~07:00','가이드 미팅 & 투어 출발','','투어','','https://experiences.myrealtrip.com/products/3442348'),
+          mkItem('09:00~09:20','고속도로 휴게소','','이동'),
+          mkItem('10:30~11:50','바닷가 자유시간 또는 돌고래 크루즈','[힐링] 바닷가 / [실속][품격] 크루즈','투어'),
+          mkItem('12:00~12:50','점심','[힐링][실속] 자유식 / [품격] 비빔밥','식사'),
+          mkItem('13:00~14:10','4WD & 모래썰매','','투어'),
+          mkItem('14:30~15:30','와이너리 와인 시음','무료 서비스 · 어린이 음료 별도 없음','투어'),
+          mkItem('15:30~18:30','시드니 시티 복귀','리지스 월드 스퀘어 앞 하차','이동'),
+          mkItem('저녁','저녁 식사 (미정)','복귀 시간 따라 가볍게','식사')
+        ]},
+      { id:'d6', date:'2026-09-08', title:'체크아웃 · 라페루즈 · 크로눌라 바비큐 · 공항호텔',
+        tip:'역방향 투어 대신 자유 일정. 짐은 아침에 공항호텔에 먼저 맡겨서(투숙 예정자 무료 보관) 하루 종일 몸만 가볍게 다녀요. 라페루즈·크로눌라 모두 보타니베이 남쪽 라인이라 시내를 안 거치고 이어져요. 9월 저녁은 12~13도로 쌀쌀하니 겉옷 필수, 바비큐는 18시 전 시작 추천. 다음날 새벽 5시 기상이니 19시 전후 호텔 복귀.',
+        items:[
+          mkItem('아침','아침 식사 (미정) · 남은 재료 정리','','식사'),
+          mkItem('08:30~09:00','서리힐즈 체크아웃','139 Commonwealth St','숙소'),
+          mkItem('09:00~09:30','택시 2대로 공항호텔 이동 · 짐 보관','Rydges Sydney Airport · 투숙 예정자 무료 보관','이동','','https://www.rydges.com/accommodation/sydney-nsw/rydges-sydney-airport/'),
+          mkItem('10:00','라페루즈 이동','호텔에서 택시 약 15분','이동'),
+          mkItem('10:00~12:30','라페루즈','Bare Island 요새(미션임파서블 촬영지) · Congwong Beach 모래놀이 · 9월은 혹등고래 시즌, 곶에서 고래 찾기','관광','','https://en.wikipedia.org/wiki/La_Perouse,_New_South_Wales'),
+          mkItem('12:30~13:30','점심','The Boatshed La Perouse 또는 인근 매점','식사','','https://www.google.com/maps/search/?api=1&query=The+Boatshed+La+Perouse'),
+          mkItem('14:00','크로눌라 이동','택시 약 25분','이동'),
+          mkItem('14:30~16:30','크로눌라 구경','크로눌라 몰 산책 · 크로눌라 비치 · 무료 오션풀 · 서퍼 구경','관광','','https://www.google.com/maps/search/?api=1&query=Cronulla+Beach'),
+          mkItem('16:30~17:00','바비큐 장보기','크로눌라 몰 Woolworths · 고기·소시지 + 집게·기름·종이접시·물티슈까지','쇼핑','','https://www.woolworths.com.au/'),
+          mkItem('17:00~18:30','Gunnamatta Park 무료 바비큐 저녁','무료 전기 그릴 · 잔디밭·놀이터 · 잔잔한 만이라 아이들 놀기 좋음','식사','','https://www.google.com/maps/search/?api=1&query=Gunnamatta+Park+Cronulla'),
+          mkItem('19:00~19:30','공항호텔 복귀 · 체크인','택시 약 25분 · 짐 찾고 체크인','숙소','','https://www.rydges.com/accommodation/sydney-nsw/rydges-sydney-airport/'),
+          mkItem('밤','짐 정리 · 일찍 취침','새벽 5시 기상 대비','숙소')
+        ]},
+      { id:'d7', date:'2026-09-09', title:'귀국',
+        tip:'07:55 출발이라 늦어도 05:30~05:45엔 터미널 도착 권장(국제선 2시간 전). 공항호텔에서 국제선 터미널까지 도보 이동 가능.',
+        items:[
+          mkItem('05:00~05:30','공항호텔 체크아웃 · 국제선 터미널 이동','Rydges Sydney Airport → T1','이동','','https://www.sydneyairport.com.au/'),
+          mkItem('07:55','시드니 출발','대한항공 직항','이동'),
+          mkItem('17:35','인천 도착','','이동','','https://www.airport.kr/')
+        ]}
+    ];
+  }
+
+  /* ---------------- state ---------------- */
+  var state = {
+    tab:'itinerary',
+    tripInfo: null,
+    itinerary: null,
+    expenses: null,
+    loaded:false,
+    modalOpen:false
+  };
+
+  /* ---------------- storage ---------------- */
+  // 일정 버전: 앱 파일의 기본 일정이 크게 바뀔 때마다 이 값을 올려요.
+  // 저장된 버전과 다르면 옛날 일정·여행정보를 자동으로 새 일정으로 교체해요 (경비 기록은 보존).
+  var DATA_VERSION = 'v17-firebase-github-2026-07-25';
+
+  async function loadAll(){
+    var storedVersion = null;
+    try{
+      var rv = await window.storage.get('data-version', true);
+      storedVersion = rv && rv.value ? rv.value : null;
+    }catch(e){ storedVersion = null; }
+
+    var needMigration = storedVersion !== DATA_VERSION;
+
+    if(needMigration){
+      // 새 버전: 일정·여행정보를 새 기본값으로 교체하고 저장 (경비는 건드리지 않음)
+      state.tripInfo = defaultTripInfo();
+      state.itinerary = defaultItinerary();
+      try{
+        await window.storage.set('trip-info', JSON.stringify(state.tripInfo), true);
+        await window.storage.set('itinerary', JSON.stringify(state.itinerary), true);
+        await window.storage.set('data-version', DATA_VERSION, true);
+      }catch(e){ /* 저장 실패해도 화면에는 새 일정 표시 */ }
+    } else {
+      try{
+        var r = await window.storage.get('trip-info', true);
+        state.tripInfo = r && r.value ? JSON.parse(r.value) : defaultTripInfo();
+      }catch(e){ state.tripInfo = defaultTripInfo(); }
+
+      try{
+        var r2 = await window.storage.get('itinerary', true);
+        state.itinerary = r2 && r2.value ? JSON.parse(r2.value) : defaultItinerary();
+      }catch(e){ state.itinerary = defaultItinerary(); }
+    }
+
+    try{
+      var r3 = await window.storage.get('expenses', true);
+      state.expenses = r3 && r3.value ? JSON.parse(r3.value) : [];
+    }catch(e){ state.expenses = []; }
+
+    state.loaded = true;
+  }
+
+  async function saveTripInfo(){
+    try{ await window.storage.set('trip-info', JSON.stringify(state.tripInfo), true); }
+    catch(e){ showToast('저장에 실패했어요. 다시 시도해주세요.'); }
+  }
+  async function saveItinerary(){
+    try{ await window.storage.set('itinerary', JSON.stringify(state.itinerary), true); }
+    catch(e){ showToast('저장에 실패했어요. 다시 시도해주세요.'); }
+  }
+  async function saveExpenses(){
+    try{ await window.storage.set('expenses', JSON.stringify(state.expenses), true); }
+    catch(e){ showToast('저장에 실패했어요. 다시 시도해주세요.'); }
+  }
+
+  /* ---------------- modal helper ---------------- */
+  function closeModal(){
+    document.getElementById('modal-root').innerHTML = '';
+    state.modalOpen = false;
+  }
+
+  function openModal(opts){
+    state.modalOpen = true;
+    // opts: {title, fields:[{key,label,type,value,options}], submitLabel, onSubmit(values), onDelete}
+    var root = document.getElementById('modal-root');
+    var html = '<div class="modal-backdrop" id="mb"><div class="modal-sheet">';
+    html += '<button class="modal-close" data-close="1">✕</button>';
+    html += '<div class="modal-title">'+opts.title+'</div>';
+    html += '<div id="modal-form">';
+    opts.fields.forEach(function(f){
+      html += '<div class="field">';
+      if(f.type === 'checkbox'){
+        html += '<label class="field-check"><input type="checkbox" data-key="'+f.key+'" '+(f.value?'checked':'')+' style="width:16px;height:16px;accent-color:var(--teal);"> '+f.label+'</label>';
+      } else {
+        html += '<label>'+f.label+'</label>';
+        if(f.type === 'select'){
+          html += '<select data-key="'+f.key+'">';
+          f.options.forEach(function(o){
+            var val = typeof o === 'object' ? o.value : o;
+            var lab = typeof o === 'object' ? o.label : o;
+            html += '<option value="'+val+'" '+(String(val)===String(f.value)?'selected':'')+'>'+lab+'</option>';
+          });
+          html += '</select>';
+        } else if(f.type === 'textarea'){
+          html += '<textarea data-key="'+f.key+'" placeholder="'+(f.placeholder||'')+'">'+(f.value||'')+'</textarea>';
+        } else {
+          html += '<input type="'+f.type+'" data-key="'+f.key+'" value="'+(f.value!==undefined?f.value:'').toString().replace(/"/g,'&quot;')+'" placeholder="'+(f.placeholder||'')+'" '+(f.step?('step="'+f.step+'"'):'')+'>';
+        }
+      }
+      html += '</div>';
+    });
+    html += '<div class="modal-actions">';
+    html += '<button type="button" class="btn btn-outline" data-close="1">취소</button>';
+    html += '<button type="button" class="btn btn-teal" id="modal-save-btn">'+(opts.submitLabel||'저장')+'</button>';
+    html += '</div>';
+    if(opts.onDelete){
+      html += '<button type="button" class="modal-delete-link" id="modal-delete-btn">삭제하기</button>';
+    }
+    html += '</div></div></div>';
+    root.innerHTML = html;
+
+    root.querySelectorAll('[data-close]').forEach(function(el){
+      el.addEventListener('click', closeModal);
+    });
+    document.getElementById('mb').addEventListener('click', function(e){
+      if(e.target.id === 'mb') closeModal();
+    });
+    if(opts.onDelete){
+      document.getElementById('modal-delete-btn').addEventListener('click', function(){
+        opts.onDelete();
+        closeModal();
+      });
+    }
+    root.querySelectorAll('[data-key]').forEach(function(el){
+      el.addEventListener('focus', function(){
+        setTimeout(function(){
+          el.scrollIntoView({block:'center', behavior:'smooth'});
+        }, 300);
+      });
+      el.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' && el.tagName !== 'TEXTAREA'){
+          e.preventDefault();
+          doSubmit();
+        }
+      });
+    });
+
+    function doSubmit(){
+      try{
+        var values = {};
+        opts.fields.forEach(function(f){
+          var el = root.querySelector('[data-key="'+f.key+'"]');
+          if(!el) return;
+          if(f.type === 'checkbox'){ values[f.key] = el.checked; }
+          else if(f.type === 'number'){ values[f.key] = el.value === '' ? 0 : Number(el.value); }
+          else { values[f.key] = el.value; }
+        });
+        var result = opts.onSubmit(values);
+        if(result !== false) closeModal();
+      }catch(err){
+        console.error('modal submit error:', err);
+        showToast('저장 중 문제가 생겼어요: ' + (err && err.message ? err.message : '알 수 없는 오류'));
+      }
+    }
+
+    document.getElementById('modal-save-btn').addEventListener('click', doSubmit);
+  }
+
+  /* ---------------- render: root ---------------- */
+  function render(){
+    var root = document.getElementById('root');
+    try{
+      var html = '';
+      html += renderAppBar();
+      html += renderHero();
+      html += '<div class="content">';
+      if(state.tab === 'itinerary') html += renderItineraryTab();
+      else if(state.tab === 'expenses') html += renderExpensesTab();
+      else html += renderInfoTab();
+      html += '</div>';
+      html += renderTabBar();
+      root.innerHTML = html;
+      bindEvents();
+    }catch(err){
+      console.error('render error:', err);
+      showToast('화면을 그리는 중 문제가 생겼어요: ' + (err && err.message ? err.message : '알 수 없는 오류'));
+    }
+  }
+
+  function renderAppBar(){
+    return '<div class="app-bar">'+LEAF_ICON+'<span class="app-name">트래블릿</span></div>';
+  }
+
+  function renderHero(){
+    var pax = state.tripInfo.travelers.length;
+    return '' +
+      '<div class="hero">' +
+        '<div class="hero-main">' +
+          '<div class="hero-eyebrow">Family Trip · Boarding Pass</div>' +
+          '<div class="hero-route">시드니 <span class="plane">✈</span> SYD</div>' +
+          '<div class="hero-dates">09.03 (목) — 09.09 (수) · 서리힐즈 → 공항호텔</div>' +
+          '<div class="hero-tagline">하버 시티에서 보내는 가족의 일주일</div>' +
+        '</div>' +
+        '<div class="hero-stub">' +
+          '<div class="pax-label">Pax</div>' +
+          '<div class="pax-num">'+pax+'</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function renderTabBar(){
+    function b(key, icon, label){
+      var active = state.tab === key ? ' active' : '';
+      return '<button class="tab-btn'+active+'" data-tab="'+key+'"><span class="tag-icon">'+icon+'</span>'+label+'</button>';
+    }
+    return '<div class="tabbar">' + b('itinerary','🧭','일정') + b('expenses','🧾','경비') + b('info','📎','정보') + '</div>';
+  }
+
+  /* ---------------- itinerary tab ---------------- */
+  function renderItineraryTab(){
+    var html = '<div class="section-title"><span class="st-label">'+LEAF_ICON+'여행 일정</span><button class="btn btn-ghost btn-sm" data-action="reset-itinerary">되돌리기</button></div>';
+    html += '<div class="section-sub">일정을 눌러서 수정하거나, 완료 체크로 진행 상황을 표시하세요. 가족 모두에게 같은 내용이 보여요.</div>';
+    state.itinerary.forEach(function(day){
+      html += renderDayCard(day);
+    });
+    return html;
+  }
+
+  function renderDayCard(day){
+    var parts = day.date.split('-');
+    var monthNum = parseInt(parts[1], 10);
+    var dayNum = parseInt(parts[2], 10);
+    var html = '<div class="day-card">';
+    html += '<div class="day-side"><div class="wk">'+monthNum+'월</div><div class="num">'+dayNum+'</div><div class="mon">'+weekdayKo(day.date)+'요일</div></div>';
+    html += '<div class="day-divider"></div>';
+    html += '<div class="day-body">';
+    html += '<div class="day-title-row"><div class="day-title">'+day.title+'</div><button class="day-menu-btn" data-action="edit-day" data-day="'+day.id+'">✎</button></div>';
+    if(day.tip) html += '<div class="day-tip">'+day.tip+'</div>';
+    day.items.forEach(function(item, i){
+      var catColor = (ITEM_CATS[item.cat]||ITEM_CATS['기타']).color;
+      html += '<div class="item-row">';
+      html += '<div class="item-time">'+item.time+'</div>';
+      html += '<input type="checkbox" class="item-check" data-action="toggle-item" data-day="'+day.id+'" data-item="'+item.id+'" '+(item.done?'checked':'')+'>';
+      html += '<div class="item-dot" style="background:'+catColor+';"></div>';
+      html += '<div class="item-main">';
+      if(item.link){
+        html += '<a class="item-title-link'+(item.done?' done':'')+'" href="'+item.link+'" target="_blank" rel="noopener noreferrer"><span class="item-title'+(item.done?' done':'')+'" style="display:inline;">'+item.title+'</span><svg class="ext-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>';
+      } else {
+        html += '<div class="item-title'+(item.done?' done':'')+'">'+item.title+'</div>';
+      }
+      if(item.place) html += '<div class="item-place">'+item.place+'</div>';
+      if(item.note) html += '<div class="item-note">'+item.note+'</div>';
+      if(item.link){
+        html += '<a class="item-link-chip" href="'+item.link+'" target="_blank" rel="noopener noreferrer">🔗 '+linkDomain(item.link)+' 바로가기</a>';
+      }
+      html += '</div>';
+      html += '<div class="item-actions">';
+      html += '<button class="btn-icon" data-action="edit-item" data-day="'+day.id+'" data-item="'+item.id+'">✎</button>';
+      html += '</div>';
+      html += '</div>';
+    });
+    html += '<button class="add-item-btn" data-action="add-item" data-day="'+day.id+'">+ 일정 추가</button>';
+    html += '</div></div>';
+    return html;
+  }
+
+  function openItemModal(dayId, itemId){
+    var day = state.itinerary.find(function(d){ return d.id === dayId; });
+    var item = itemId ? day.items.find(function(i){ return i.id === itemId; }) : null;
+    var catOptions = Object.keys(ITEM_CATS);
+    openModal({
+      title: item ? '일정 수정' : '일정 추가',
+      fields:[
+        {key:'time', label:'시간', type:'text', value: item?item.time:'', placeholder:'예: 오전, 14:00~16:00'},
+        {key:'title', label:'제목', type:'text', value: item?item.title:'', placeholder:'예: 오페라하우스 투어'},
+        {key:'place', label:'장소 (선택)', type:'text', value: item?item.place:''},
+        {key:'cat', label:'분류', type:'select', value: item?item.cat:'관광', options: catOptions},
+        {key:'link', label:'관련 사이트 링크 (선택)', type:'text', value: item?item.link:'', placeholder:'https://...'},
+        {key:'note', label:'메모 (선택)', type:'textarea', value: item?item.note:''}
+      ],
+      submitLabel:'저장',
+      onSubmit:function(v){
+        if(!v.title){ showToast('제목을 입력해주세요.'); return false; }
+        if(item){
+          item.time=v.time; item.title=v.title; item.place=v.place; item.cat=v.cat; item.note=v.note; item.link=v.link;
+        } else {
+          day.items.push(mkItem(v.time||'시간 미정', v.title, v.place, v.cat, v.note, v.link));
+        }
+        saveItinerary(); render(); showToast('일정을 저장했어요.');
+      },
+      onDelete: item ? function(){
+        day.items = day.items.filter(function(i){ return i.id !== itemId; });
+        saveItinerary(); render(); showToast('일정을 삭제했어요.');
+      } : null
+    });
+  }
+
+  function openDayModal(dayId){
+    var day = state.itinerary.find(function(d){ return d.id === dayId; });
+    openModal({
+      title:'하루 정보 수정',
+      fields:[
+        {key:'title', label:'제목', type:'text', value: day.title},
+        {key:'tip', label:'메모/팁', type:'textarea', value: day.tip}
+      ],
+      submitLabel:'저장',
+      onSubmit:function(v){
+        day.title = v.title; day.tip = v.tip;
+        saveItinerary(); render(); showToast('저장했어요.');
+      }
+    });
+  }
+
+  /* ---------------- expenses tab ---------------- */
+  function renderExpensesTab(){
+    // 상태: 'planned'(예상) / 'confirmed'(결제 확정). 상태 없는 기존 기록은 확정으로 취급.
+    var confirmedTotal = 0, plannedTotal = 0;
+    state.expenses.forEach(function(e){
+      if(e.status === 'planned') plannedTotal += Number(e.amount||0);
+      else confirmedTotal += Number(e.amount||0);
+    });
+    var grandTotal = confirmedTotal + plannedTotal;
+
+    var html = '<div class="section-title"><span class="st-label">'+LEAF_ICON+'경비 기록</span><button class="btn btn-coral btn-sm" data-action="add-expense">+ 지출 추가</button></div>';
+    html += '<div class="section-sub">예상 금액으로 미리 잡아두고, 결제되면 "확정" 버튼으로 확정 금액을 입력하세요.</div>';
+
+    html += '<div class="exp-summary"><div><div class="lbl">결제 확정 합계</div><div class="amt">'+fmtMoney(confirmedTotal)+'</div>'
+          + '<div class="exp-sub-totals">예상 '+fmtMoney(plannedTotal)+' · 총 예상 경비 '+fmtMoney(grandTotal)+'</div></div>'
+          + '<div class="count">전체 '+state.expenses.length+'건</div></div>';
+
+    if(state.expenses.length > 0){
+      var byPayer = {};
+      state.expenses.forEach(function(e){
+        if(!e.payer || e.status === 'planned') return;
+        byPayer[e.payer] = (byPayer[e.payer]||0) + Number(e.amount||0);
+      });
+
+      // flat list, most recently added first
+      state.expenses.slice().reverse().forEach(function(e){
+        var payer = state.tripInfo.travelers.find(function(t){ return t.id===e.payer; });
+        var isPlanned = e.status === 'planned';
+        html += '<div class="exp-row'+(isPlanned?' planned':'')+'">';
+        html += '<div class="exp-info"><div class="exp-desc">'
+              + '<span class="exp-badge '+(isPlanned?'badge-planned':'badge-confirmed')+'">'+(isPlanned?'예상':'확정')+'</span>'
+              + e.description+'</div><div class="exp-meta">'+(payer?payer.name+' 결제':'결제자 미지정')+'</div>'+(e.note?'<div class="exp-note">'+e.note+'</div>':'')+'</div>';
+        html += '<div class="exp-amt'+(isPlanned?' amt-planned':'')+'">'+fmtMoney(e.amount)+'</div>';
+        html += '<div class="exp-actions">';
+        if(isPlanned){
+          html += '<button class="btn btn-teal btn-sm" data-action="confirm-expense" data-exp="'+e.id+'">확정</button>';
+        }
+        html += '<button class="btn-icon" data-action="edit-expense" data-exp="'+e.id+'">✎</button>';
+        html += '<button class="btn-icon" data-action="delete-expense" data-exp="'+e.id+'">🗑</button>';
+        html += '</div>';
+        html += '</div>';
+      });
+
+      // payer summary (확정만)
+      var payerIds = Object.keys(byPayer);
+      if(payerIds.length){
+        html += '<div class="payer-summary"><div class="exp-group-label" style="margin-top:0;">결제자별 합계 (확정 기준)</div>';
+        payerIds.forEach(function(pid){
+          var t = state.tripInfo.travelers.find(function(t){ return t.id===pid; });
+          html += '<div class="payer-row"><div class="pname">'+(t?t.name:'알 수 없음')+'</div><div class="pamt">'+fmtMoney(byPayer[pid])+'</div></div>';
+        });
+        html += '</div>';
+      }
+    } else {
+      html += '<div class="empty-state"><div class="em-title">아직 기록된 지출이 없어요</div><div class="em-sub">‘+ 지출 추가’ 버튼으로 예상 경비부터 잡아보세요.</div></div>';
+    }
+    return html;
+  }
+
+  function openExpenseModal(expId, forceConfirm){
+    var exp = expId ? state.expenses.find(function(e){ return e.id===expId; }) : null;
+    var travelerOptions = [{value:'', label:'선택 안 함'}].concat(state.tripInfo.travelers.map(function(t){ return {value:t.id, label:t.name}; }));
+    var statusOptions = [{value:'planned', label:'예상 금액'}, {value:'confirmed', label:'결제 확정'}];
+    var initialStatus = forceConfirm ? 'confirmed' : (exp ? (exp.status || 'confirmed') : 'planned');
+    openModal({
+      title: forceConfirm ? '결제 확정 금액 입력' : (exp ? '지출 수정' : '지출 추가'),
+      fields:[
+        {key:'description', label:'내용', type:'text', value: exp?exp.description:'', placeholder:'예: 블루마운틴 투어 비용'},
+        {key:'amount', label: forceConfirm ? '확정 금액 (원)' : '금액 (원)', type:'number', value: exp?exp.amount:'', step:'1000', placeholder:'예: 50000'},
+        {key:'status', label:'구분', type:'select', value: initialStatus, options: statusOptions},
+        {key:'payer', label:'결제자', type:'select', value: exp?exp.payer:'', options: travelerOptions},
+        {key:'note', label:'비고 (선택)', type:'textarea', value: exp?exp.note:'', placeholder:'예: 카드 결제, 나중에 환불 예정 등'}
+      ],
+      submitLabel: forceConfirm ? '확정 저장' : '저장',
+      onSubmit:function(v){
+        if(!v.description || !v.amount){ showToast('내용과 금액을 입력해주세요.'); return false; }
+        if(exp){
+          exp.description=v.description; exp.amount=v.amount; exp.status=v.status; exp.payer=v.payer; exp.note=v.note;
+        } else {
+          state.expenses.push({id:uid(), description:v.description, amount:v.amount, status:v.status, payer:v.payer, note:v.note});
+        }
+        saveExpenses(); render(); showToast(v.status==='confirmed' ? '결제 확정으로 저장했어요.' : '예상 경비로 저장했어요.');
+      },
+      onDelete: exp ? function(){
+        state.expenses = state.expenses.filter(function(e){ return e.id !== expId; });
+        saveExpenses(); render(); showToast('지출을 삭제했어요.');
+      } : null
+    });
+  }
+
+  /* ---------------- info tab ---------------- */
+  function renderInfoTab(){
+    var ti = state.tripInfo;
+    var html = '<div class="section-title"><span class="st-label">'+LEAF_ICON+'여행 정보</span></div>';
+    html += '<div class="section-sub">숙소, 항공편, 가족 구성원 정보를 확인하고 수정할 수 있어요.</div>';
+
+    html += '<div class="share-note">📎 이 페이지는 링크를 아는 모든 가족이 함께 보고 수정하는 공유 기록이에요.</div>';
+
+    // accommodation
+    html += '<div class="info-card">';
+    html += '<div class="info-card-head"><div class="info-card-title"><span class="ic">🏠</span>'+ti.accommodation.name+'</div><button class="btn-icon" data-action="edit-accom">✎</button></div>';
+    html += '<div class="info-line">9/3 체크인 · 9/8 체크아웃</div>';
+    html += '<div class="addr-box"><span>'+ti.accommodation.address+'</span><button class="btn-icon" data-action="copy-addr" data-addr="'+ti.accommodation.address.replace(/"/g,'&quot;')+'">복사</button></div>';
+    html += '</div>';
+
+    // last night hotel
+    html += '<div class="info-card">';
+    html += '<div class="info-card-head"><div class="info-card-title"><span class="ic">✈️</span>'+ti.lastNightHotel.name+'</div><button class="btn-icon" data-action="edit-hotel">✎</button></div>';
+    html += '<div class="info-line">9/8 ~ 9/9 새벽, 공항 도보 이동용 마지막 숙박</div>';
+    html += '<div class="addr-box"><span>'+ti.lastNightHotel.address+'</span><button class="btn-icon" data-action="copy-addr" data-addr="'+ti.lastNightHotel.address.replace(/"/g,'&quot;')+'">복사</button></div>';
+    html += '<div class="info-sub">'+ti.lastNightHotel.note+'</div>';
+    html += '</div>';
+
+    // flights
+    html += '<div class="info-card"><div class="info-card-head"><div class="info-card-title"><span class="ic">🎫</span>항공편</div></div>';
+    ti.flights.forEach(function(f){
+      html += '<div class="flight-row"><div><div class="flight-label">'+f.label+'</div><div class="flight-detail">'+f.detail+'</div></div><div class="flight-date">'+f.date+'</div></div>';
+    });
+    html += '</div>';
+
+    // travelers
+    html += '<div class="info-card">';
+    html += '<div class="info-card-head"><div class="info-card-title"><span class="ic">👪</span>여행 인원 ('+ti.travelers.length+'명)</div><button class="btn btn-ghost btn-sm" data-action="add-traveler">+ 인원 추가</button></div>';
+    ti.travelers.forEach(function(t){
+      html += '<span class="traveler-chip">'+t.name+' <span class="role">'+t.role+'</span><button data-action="edit-traveler" data-tid="'+t.id+'">✎</button></span>';
+    });
+    html += '</div>';
+
+    // notes
+    html += '<div class="info-card"><div class="info-card-head"><div class="info-card-title"><span class="ic">📝</span>공유 메모</div></div>';
+    html += '<textarea class="notes-area" id="shared-notes" placeholder="가족과 공유할 메모를 적어보세요 (예: 여권 보관 위치, 비상 연락처 등)">'+ti.notes+'</textarea>';
+    html += '</div>';
+
+    return html;
+  }
+
+  function openAccomModal(){
+    var a = state.tripInfo.accommodation;
+    openModal({
+      title:'숙소 정보 수정',
+      fields:[
+        {key:'name', label:'숙소 이름', type:'text', value:a.name},
+        {key:'address', label:'주소', type:'text', value:a.address},
+        {key:'checkIn', label:'체크인', type:'date', value:a.checkIn},
+        {key:'checkOut', label:'체크아웃', type:'date', value:a.checkOut}
+      ],
+      onSubmit:function(v){
+        a.name=v.name; a.address=v.address; a.checkIn=v.checkIn; a.checkOut=v.checkOut;
+        saveTripInfo(); render(); showToast('숙소 정보를 저장했어요.');
+      }
+    });
+  }
+  function openHotelModal(){
+    var h = state.tripInfo.lastNightHotel;
+    openModal({
+      title:'공항 호텔 정보 수정',
+      fields:[
+        {key:'name', label:'호텔 이름', type:'text', value:h.name},
+        {key:'address', label:'주소', type:'text', value:h.address},
+        {key:'note', label:'메모', type:'textarea', value:h.note}
+      ],
+      onSubmit:function(v){
+        h.name=v.name; h.address=v.address; h.note=v.note;
+        saveTripInfo(); render(); showToast('저장했어요.');
+      }
+    });
+  }
+  function openTravelerModal(tid){
+    var t = tid ? state.tripInfo.travelers.find(function(x){ return x.id===tid; }) : null;
+    openModal({
+      title: t ? '인원 정보 수정' : '인원 추가',
+      fields:[
+        {key:'name', label:'이름 또는 호칭', type:'text', value: t?t.name:'', placeholder:'예: 아빠, 지민'},
+        {key:'role', label:'구분', type:'text', value: t?t.role:'', placeholder:'예: 어른, 초2, 70대'}
+      ],
+      onSubmit:function(v){
+        if(!v.name){ showToast('이름을 입력해주세요.'); return false; }
+        if(t){ t.name=v.name; t.role=v.role; }
+        else { state.tripInfo.travelers.push({id:uid(), name:v.name, role:v.role||'가족'}); }
+        saveTripInfo(); render(); showToast('저장했어요.');
+      },
+      onDelete: t ? function(){
+        state.tripInfo.travelers = state.tripInfo.travelers.filter(function(x){ return x.id !== tid; });
+        saveTripInfo(); render(); showToast('삭제했어요.');
+      } : null
+    });
+  }
+
+  /* ---------------- events ---------------- */
+  function bindEvents(){
+    document.querySelectorAll('[data-tab]').forEach(function(el){
+      el.addEventListener('click', function(){
+        state.tab = el.getAttribute('data-tab');
+        render();
+      });
+    });
+
+    document.querySelectorAll('[data-action="add-item"]').forEach(function(el){
+      el.addEventListener('click', function(){ openItemModal(el.getAttribute('data-day'), null); });
+    });
+    document.querySelectorAll('[data-action="edit-item"]').forEach(function(el){
+      el.addEventListener('click', function(){ openItemModal(el.getAttribute('data-day'), el.getAttribute('data-item')); });
+    });
+    document.querySelectorAll('[data-action="edit-day"]').forEach(function(el){
+      el.addEventListener('click', function(){ openDayModal(el.getAttribute('data-day')); });
+    });
+    document.querySelectorAll('[data-action="toggle-item"]').forEach(function(el){
+      el.addEventListener('change', function(){
+        var day = state.itinerary.find(function(d){ return d.id === el.getAttribute('data-day'); });
+        var item = day.items.find(function(i){ return i.id === el.getAttribute('data-item'); });
+        item.done = el.checked;
+        saveItinerary(); render();
+      });
+    });
+    var resetBtn = document.querySelector('[data-action="reset-itinerary"]');
+    if(resetBtn){
+      resetBtn.addEventListener('click', function(){
+        if(resetBtn.getAttribute('data-confirm') === '1'){
+          state.itinerary = defaultItinerary();
+          saveItinerary(); render(); showToast('처음 일정으로 되돌렸어요.');
+        } else {
+          resetBtn.setAttribute('data-confirm', '1');
+          resetBtn.textContent = '한 번 더 누르면 초기화';
+          showToast('수정 내용이 사라져요. 한 번 더 누르면 초기화됩니다.');
+          setTimeout(function(){
+            if(resetBtn && resetBtn.getAttribute('data-confirm') === '1'){
+              resetBtn.setAttribute('data-confirm', '0');
+              resetBtn.textContent = '되돌리기';
+            }
+          }, 3500);
+        }
+      });
+    }
+
+    var addExpBtn = document.querySelector('[data-action="add-expense"]');
+    if(addExpBtn) addExpBtn.addEventListener('click', function(){ openExpenseModal(null); });
+    document.querySelectorAll('[data-action="edit-expense"]').forEach(function(el){
+      el.addEventListener('click', function(){ openExpenseModal(el.getAttribute('data-exp')); });
+    });
+    document.querySelectorAll('[data-action="confirm-expense"]').forEach(function(el){
+      el.addEventListener('click', function(){ openExpenseModal(el.getAttribute('data-exp'), true); });
+    });
+    document.querySelectorAll('[data-action="delete-expense"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var id = el.getAttribute('data-exp');
+        var removed = state.expenses.filter(function(e){ return e.id === id; })[0];
+        state.expenses = state.expenses.filter(function(e){ return e.id !== id; });
+        saveExpenses(); render();
+        showToast(removed ? ('삭제했어요: ' + removed.description) : '삭제했어요.');
+      });
+    });
+
+    var accomBtn = document.querySelector('[data-action="edit-accom"]');
+    if(accomBtn) accomBtn.addEventListener('click', openAccomModal);
+    var hotelBtn = document.querySelector('[data-action="edit-hotel"]');
+    if(hotelBtn) hotelBtn.addEventListener('click', openHotelModal);
+    var addTravelerBtn = document.querySelector('[data-action="add-traveler"]');
+    if(addTravelerBtn) addTravelerBtn.addEventListener('click', function(){ openTravelerModal(null); });
+    document.querySelectorAll('[data-action="edit-traveler"]').forEach(function(el){
+      el.addEventListener('click', function(e){ e.stopPropagation(); openTravelerModal(el.getAttribute('data-tid')); });
+    });
+    document.querySelectorAll('[data-action="copy-addr"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var addr = el.getAttribute('data-addr');
+        try{
+          navigator.clipboard.writeText(addr);
+          showToast('주소를 복사했어요.');
+        }catch(e){ showToast('복사에 실패했어요.'); }
+      });
+    });
+
+    var notesArea = document.getElementById('shared-notes');
+    if(notesArea){
+      var notesTimer = null;
+      notesArea.addEventListener('input', function(){
+        state.tripInfo.notes = notesArea.value;
+        if(notesTimer) clearTimeout(notesTimer);
+        notesTimer = setTimeout(function(){ saveTripInfo(); }, 700);
+      });
+    }
+  }
+
+  /* ---------------- live sync ---------------- */
+  function isTypingActive(){
+    var el = document.activeElement;
+    return el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT');
+  }
+
+  async function autoRefresh(){
+    if(state.modalOpen || isTypingActive()) return;
+    try{
+      await loadAll();
+      render();
+    }catch(e){ /* silent fail, keep showing last known state */ }
+  }
+
+  /* ---------------- init ---------------- */
+  async function init(){
+    await loadAll();
+    render();
+    setInterval(autoRefresh, 20000); // 폴백: Firestore가 안 붙었을 때도 20초마다 시도
+    document.addEventListener('visibilitychange', function(){
+      if(!document.hidden) autoRefresh();
+    });
+    window.addEventListener('focus', autoRefresh);
+
+    // Firestore 실시간 동기화: 다른 사람이 고치면 몇 초 안 걸려서 바로 반영돼요
+    if(typeof firebaseReady !== 'undefined' && firebaseReady && db){
+      ['trip-info','itinerary','expenses'].forEach(function(key){
+        db.collection(TRAVELLET_COLLECTION).doc(key).onSnapshot(function(){
+          autoRefresh();
+        }, function(err){
+          console.error('실시간 동기화 오류:', err);
+        });
+      });
+    }
+  }
+  init();
+})();
+</script>
+</body>
+</html>
